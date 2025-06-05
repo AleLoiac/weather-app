@@ -7,7 +7,19 @@ export async function fetchWeather(location) {
     const response = await fetch(url, { mode: "cors" });
     const responseData = await response.json();
     console.log(responseData);
+    console.log(filterWeatherData(responseData));
   } catch (err) {
     console.log(err);
   }
+}
+
+function filterWeatherData(response) {
+  const weatherObj = {
+    fullLocationName: response.resolvedAddress,
+    condition: response.currentConditions.conditions,
+    temperature: response.currentConditions.temp,
+    perceivedTemperature: response.currentConditions.feelslike,
+    forecastDescription: response.description,
+  };
+  return weatherObj;
 }
