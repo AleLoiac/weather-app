@@ -1,4 +1,5 @@
 import { fetchWeather } from "./api/fetchData";
+import "./modern-normalize.css";
 import "./styles.css";
 
 const location = document.querySelector("#location");
