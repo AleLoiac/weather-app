@@ -21,6 +21,7 @@ function filterWeatherData(response) {
   const weatherObj = {
     fullLocationName: response.resolvedAddress,
     condition: response.currentConditions.conditions,
+    icon: response.currentConditions.icon,
     temperature: response.currentConditions.temp,
     perceivedTemperature: response.currentConditions.feelslike,
     forecastDescription: response.description,
