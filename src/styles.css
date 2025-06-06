@@ -1,4 +1,5 @@
 body {
+  padding: 20px;
   font-family: "Clash Display", sans-serif;
   font-size: 1.2rem;
   background-image: url("assets/img/forest-background.svg");
@@ -12,6 +13,7 @@ form {
   margin-top: 10vh;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 input:-webkit-autofill {
@@ -26,6 +28,7 @@ form button {
   border-radius: 15px;
   outline: none;
   font-weight: inherit;
+  margin-bottom: 10px;
 }
 
 form input {
@@ -38,10 +41,6 @@ form button {
 
 form button:active {
   box-shadow: inset 0px 0px 3px 2px grey;
-}
-
-form div {
-  display: inline;
 }
 
 .result {
