@@ -1,3 +1,5 @@
+import { renderData } from "../utils/renderResults";
+
 const apiKey = "Y5AFPAN8A85957KL753735DSF";
 
 export async function fetchWeather(location) {
@@ -7,7 +9,9 @@ export async function fetchWeather(location) {
     const response = await fetch(url, { mode: "cors" });
     const responseData = await response.json();
     console.log(responseData);
-    console.log(filterWeatherData(responseData));
+    const filteredData = filterWeatherData(responseData);
+    console.log(filteredData);
+    renderData(filteredData);
   } catch (err) {
     console.log(err);
   }
