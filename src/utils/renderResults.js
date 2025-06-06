@@ -10,7 +10,8 @@ export function renderData(cleanResponse) {
   condition.textContent = cleanResponse.condition;
   image.src = importImage(cleanResponse.icon);
   temp.textContent = cleanResponse.temperature;
-  perceivedTemp.textContent = cleanResponse.perceivedTemperature;
+  perceivedTemp.textContent =
+    "Perceived temperature: " + cleanResponse.perceivedTemperature;
   description.textContent = cleanResponse.forecastDescription;
 }
 

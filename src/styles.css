@@ -1,0 +1,70 @@
+body {
+  font-family: "Clash Display", sans-serif;
+  font-size: 1.2rem;
+  background-image: url("assets/img/forest-background.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+form {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px rgb(147 218 201) inset !important;
+}
+
+form input,
+form button {
+  background-color: rgb(147 218 201);
+  padding: 3px 10px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  font-weight: inherit;
+}
+
+form input {
+  margin-right: 4px;
+}
+
+form button {
+  cursor: pointer;
+}
+
+form button:active {
+  box-shadow: inset 0px 0px 3px 2px grey;
+}
+
+form div {
+  display: inline;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.result-header {
+  display: flex;
+  gap: 100px;
+}
+
+.result > div {
+  margin-top: 15px;
+}
+
+.result img {
+  width: 100px;
+}
+
+.temp {
+  font-size: 5rem;
+  font-weight: 200;
+}
