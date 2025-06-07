@@ -73,20 +73,17 @@ form button:active {
   position: fixed;
   left: calc(50% - 30px);
   bottom: calc(50% - 30px);
-  width: 60px;
-  padding: 8px;
-  aspect-ratio: 1;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: #1e593a;
-  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
-  -webkit-mask: var(--_m);
-  mask: var(--_m);
-  -webkit-mask-composite: source-out;
-  mask-composite: subtract;
-  animation: l3 1s infinite linear;
+  animation: animloader 1s linear infinite;
 }
-@keyframes l3 {
-  to {
-    transform: rotate(1turn);
+
+@keyframes animloader {
+  0% {
+    box-shadow: -72px 0 #1e593a inset;
+  }
+  100% {
+    box-shadow: 48px 0 #1e593a inset;
   }
 }
