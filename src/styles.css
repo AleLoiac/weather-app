@@ -1,8 +1,14 @@
+:root {
+  --color1: rgb(90 138 168);
+  --color2: rgb(35, 84, 116);
+}
+
 body {
   padding: 20px;
   font-family: "Clash Display", sans-serif;
-  font-size: 1.4rem;
-  background-image: url("assets/img/forest-background.svg");
+  font-size: 1.8rem;
+  font-weight: 200;
+  background-image: url("assets/img/simple-mountains.svg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -17,12 +23,12 @@ form {
 }
 
 input:-webkit-autofill {
-  box-shadow: 0 0 0 1000px rgb(147 218 201) inset !important;
+  box-shadow: 0 0 0 1000px var(--color1) inset !important;
 }
 
 form input,
 form button {
-  background-color: rgb(147 218 201);
+  background-color: var(--color1);
   padding: 3px 10px;
   border: none;
   border-radius: 15px;
@@ -40,7 +46,7 @@ form button {
 }
 
 form button:active {
-  box-shadow: inset 0px 0px 3px 2px grey;
+  box-shadow: inset 0px 0px 4px 4px var(--color2);
 }
 
 .result {
@@ -65,7 +71,7 @@ form button:active {
 
 .temp {
   font-size: 5rem;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 .loader {
@@ -73,17 +79,17 @@ form button:active {
   position: fixed;
   left: calc(50% - 30px);
   bottom: calc(50% - 30px);
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   animation: animloader 1s linear infinite;
 }
 
 @keyframes animloader {
   0% {
-    box-shadow: -72px 0 #1e593a inset;
+    box-shadow: -72px 0 var(--color2) inset;
   }
   100% {
-    box-shadow: 48px 0 #1e593a inset;
+    box-shadow: 48px 0 var(--color2) inset;
   }
 }
