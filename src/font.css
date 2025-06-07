@@ -1,38 +1,38 @@
 @font-face {
-  font-family: "Clash Display";
+  font-family: "Satoshi";
   src:
-    url("./assets/font/ClashDisplay-Medium.woff2") format("woff2"),
-    url("./assets/font/ClashDisplay-Medium.woff") format("woff");
-  font-weight: 500;
+    url("./assets/font/Satoshi-Bold.woff2") format("woff2"),
+    url("./assets/font/Satoshi-Bold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Clash Display";
+  font-family: "Satoshi";
   src:
-    url("./assets/font/ClashDisplay-Extralight.woff2") format("woff2"),
-    url("./assets/font/ClashDisplay-Extralight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Clash Display";
-  src:
-    url("./assets/font/ClashDisplay-Regular.woff2") format("woff2"),
-    url("./assets/font/ClashDisplay-Regular.woff") format("woff");
+    url("./assets/font/Satoshi-Regular.woff2") format("woff2"),
+    url("./assets/font/Satoshi-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Clash Display";
+  font-family: "Satoshi";
   src:
-    url("./assets/font/ClashDisplay-Light.woff2") format("woff2"),
-    url("./assets/font/ClashDisplay-Light.woff") format("woff");
+    url("./assets/font/Satoshi-Medium.woff2") format("woff2"),
+    url("./assets/font/Satoshi-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src:
+    url("./assets/font/Satoshi-Light.woff2") format("woff2"),
+    url("./assets/font/Satoshi-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;

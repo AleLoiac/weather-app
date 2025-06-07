@@ -5,9 +5,8 @@
 
 body {
   padding: 20px;
-  font-family: "Clash Display", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 200;
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.4rem;
   background-image: url("assets/img/simple-mountains.svg");
   background-attachment: fixed;
   background-position: center;
@@ -71,7 +70,6 @@ form button:active {
 
 .temp {
   font-size: 5rem;
-  font-weight: 100;
 }
 
 .loader {
