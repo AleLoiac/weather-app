@@ -7,11 +7,11 @@ const description = document.querySelector(".description>span");
 
 export function renderData(cleanResponse) {
   name.textContent = cleanResponse.fullLocationName;
-  condition.textContent = cleanResponse.condition;
+  condition.textContent = "Condition: " + cleanResponse.condition;
   image.src = importImage(cleanResponse.icon);
-  temp.textContent = cleanResponse.temperature;
+  temp.textContent = cleanResponse.temperature + "˚";
   perceivedTemp.textContent =
-    "Perceived temperature: " + cleanResponse.perceivedTemperature;
+    "Feels like: " + cleanResponse.perceivedTemperature + "˚";
   description.textContent = cleanResponse.forecastDescription;
 }
 
