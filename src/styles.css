@@ -58,6 +58,7 @@ form button:active {
 .result-header {
   display: flex;
   gap: 100px;
+  margin-bottom: 20px;
 }
 
 .result > div {
@@ -65,12 +66,14 @@ form button:active {
 }
 
 .result img {
-  width: 100px;
+  width: 120px;
+  margin-bottom: 20px;
 }
 
 .temp {
   font-size: 5rem;
   font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .loader {

@@ -16,6 +16,6 @@ export function renderData(cleanResponse) {
 }
 
 function importImage(icon) {
-  const url = `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/58c79610addf3d4d91471abbb95b05e96fb43019/SVG/4th%20Set%20-%20Monochrome/${icon}.svg`;
+  const url = `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/58c79610addf3d4d91471abbb95b05e96fb43019/SVG/1st%20Set%20-%20Color/${icon}.svg`;
   return url;
 }
